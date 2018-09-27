@@ -17,7 +17,12 @@ public class PhraseOMatic_r0 {
 		int oneLength = wordListOne.length;
 		int twoLength = wordListTwo.length;
 		int threeLength = wordListThree.length;
-
+		
+		for (int j = oneLength - 1; j >= 0; j--) {
+			int stringLength = wordListOne[j].length();
+			System.out.println("Item #" + j + " = " + wordListOne[j]);
+			System.out.println("Length: " + stringLength);
+		}
 		// generate and display phrases
 		for (int i = 0; i < NUMOFPHRASES; i++) {
 			int rand1 = (int) (Math.random() * oneLength);
