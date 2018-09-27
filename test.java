@@ -1,6 +1,22 @@
+import java.util.Scanner;
+
 public class PhraseOMatic_r0 {
 	public static void printOut(String inputSentence) {
 		System.out.println(inputSentence);
+	}
+	public static int getInt(String inputDescription) {
+		Scanner scannerObj = new Scanner(System.in);
+		printOut(inputDescription);
+		int returnVal = scannerObj.nextInt();
+		scannerObj.close();
+		return returnVal;
+	}
+	public static String getString(String inputDescription) {
+		Scanner scannerObj2 = new Scanner(System.in);
+		printOut(inputDescription);
+		String returnVal = scannerObj2.next();
+		scannerObj2.close();
+		return returnVal;
 	}
 	public static void main(String[] args) {
     	final int NUMOFPHRASES = 5;  // Number of phrases to generate
@@ -35,6 +51,8 @@ public class PhraseOMatic_r0 {
 				wordListThree[rand3];
 			printOut("What we need is a " + phrase);
        	} // generate and display phrases 
-		printOut("Test hey I edited this file");
+		int testGetIntInt = getInt("Enter something... anything! ");
+		printOut(Integer.toString(testGetIntInt));
+		String str = getString("Enter a string");
     } // end main()  
 } // end PhraseOMatic
