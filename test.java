@@ -1,4 +1,7 @@
 public class PhraseOMatic_r0 {
+	public static void printOut(String inputSentence) {
+		System.out.println(inputSentence);
+	}
 	public static void main(String[] args) {
     	final int NUMOFPHRASES = 5;  // Number of phrases to generate
     	
@@ -20,8 +23,8 @@ public class PhraseOMatic_r0 {
 		
 		for (int j = oneLength - 1; j >= 0; j--) {
 			int stringLength = wordListOne[j].length();
-			System.out.println("Item #" + j + " = " + wordListOne[j]);
-			System.out.println("Length: " + stringLength);
+			printOut("Item #" + j + " = " + wordListOne[j]);
+			printOut("Length: " + stringLength);
 		}
 		// generate and display phrases
 		for (int i = 0; i < NUMOFPHRASES; i++) {
@@ -30,11 +33,8 @@ public class PhraseOMatic_r0 {
 			int rand3 = (int) (Math.random() * threeLength);       
 			String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + 
 				wordListThree[rand3];
-			System.out.println("What we need is a " + phrase);
+			printOut("What we need is a " + phrase);
        	} // generate and display phrases 
-		System.out.println("Test hey I edited this file");
+		printOut("Test hey I edited this file");
     } // end main()  
 } // end PhraseOMatic
-/*
-testing github
-*/
