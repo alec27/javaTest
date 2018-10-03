@@ -17,6 +17,7 @@ public class PhraseOMatic_r0 {
 		String returnVal = scannerObj2.next();
 		scannerObj2.close();
 		return returnVal;
+		
 	}
 	public static void main(String[] args) {
     	final int NUMOFPHRASES = 5;  // Number of phrases to generate
